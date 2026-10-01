@@ -1,16 +1,14 @@
 import { T, useContent } from "../editable";
-import { useReveal } from "../useReveal";
 
 export default function Hero() {
   const cta = useContent<{ label: string; href: string }>("hero.cta");
   const ctaSecondary = useContent<{ label: string; href: string }>("hero.ctaSecondary");
-  const { ref, visible } = useReveal<HTMLDivElement>();
 
   return (
     <section className="relative overflow-hidden">
       <div className="glow pointer-events-none absolute left-1/2 top-[-10%] h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-accent/20 blur-[120px]" />
       <div className="relative mx-auto grid max-w-page gap-16 px-[var(--gutter)] pb-24 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-center md:pb-32 md:pt-20">
-        <div ref={ref} className={`reveal ${visible ? "in" : ""}`}>
+        <div className="enter">
           <T k="hero.eyebrow" as="p" className="font-display text-sm uppercase tracking-[0.18em] text-accent" />
           <T
             k="hero.headline"
@@ -34,8 +32,8 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className="reveal-fade in relative aspect-square overflow-hidden rounded shadow-md md:rounded-[28px]"
-          style={{ animationDelay: "160ms" }}
+          className="enter relative aspect-square overflow-hidden rounded shadow-md md:rounded-[28px]"
+          style={{ animationDelay: "90ms" }}
         >
           <img
             src="/images/hero-earbuds.jpg"
