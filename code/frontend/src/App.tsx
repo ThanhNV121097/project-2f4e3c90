@@ -43,9 +43,8 @@ export default function App() {
       </main>
 
       <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-page flex-col gap-2 px-[var(--gutter)] py-10 text-sm text-ink-soft sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto px-[var(--gutter)] py-10 text-sm text-ink-soft">
           <T k="footer.line" />
-          <span>Open daily · 19 Duy Tân, Hà Nội</span>
         </div>
       </footer>
     </div>
