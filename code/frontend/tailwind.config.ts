@@ -14,6 +14,9 @@ export default {
         accent: "var(--accent)",
         "accent-ink": "var(--accent-ink)",
         line: "var(--line)",
+        "ink-on-surface": "var(--ink-on-surface)",
+        "ink-soft-on-surface": "var(--ink-soft-on-surface)",
+        "line-on-surface": "var(--line-on-surface)",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

@@ -6,6 +6,32 @@
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--font-body), system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 h1, h2, h3 { font-family: var(--font-display), serif; font-weight: var(--weight-display); letter-spacing: var(--tracking-display); line-height: 1.04; margin: 0; text-wrap: balance; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.06); }
+}
+.reveal { opacity: 0; }
+.reveal.in { animation: rise var(--duration-slow) var(--ease-out) forwards; }
+.reveal-fade { opacity: 0; }
+.reveal-fade.in { animation: fade var(--duration-slow) var(--ease-out) forwards; }
+.enter { animation: rise var(--duration-slow) var(--ease-out) backwards; }
+.glow { animation: glow-breathe 6s var(--ease-out) infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-fade, .enter { opacity: 1; animation: none; }
+  .glow { animation: none; }
+}
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 p { margin: 0; }
