@@ -26,9 +26,10 @@ h1, h2, h3 { font-family: var(--font-display), serif; font-weight: var(--weight-
 .reveal.in { animation: rise var(--duration-slow) var(--ease-out) forwards; }
 .reveal-fade { opacity: 0; }
 .reveal-fade.in { animation: fade var(--duration-slow) var(--ease-out) forwards; }
+.enter { animation: rise var(--duration-slow) var(--ease-out) backwards; }
 .glow { animation: glow-breathe 6s var(--ease-out) infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .reveal-fade { opacity: 1; animation: none; }
+  .reveal, .reveal-fade, .enter { opacity: 1; animation: none; }
   .glow { animation: none; }
 }
 img { max-width: 100%; height: auto; display: block; }
