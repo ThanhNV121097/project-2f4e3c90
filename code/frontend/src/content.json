@@ -1,11 +1,74 @@
 {
-  "site": { "name": "Your business" },
-  "nav": { "links": [{ "label": "Home", "href": "/" }], "cta": { "label": "Get in touch", "href": "#contact" } },
-  "hero": {
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more.",
-    "cta": { "label": "Get in touch", "href": "#contact" }
+  "site": { "name": "Tony Apple" },
+  "nav": {
+    "links": [
+      { "label": "Products", "href": "#products" },
+      { "label": "Why genuine", "href": "#genuine" },
+      { "label": "Visit the store", "href": "#visit" }
+    ],
+    "cta": { "label": "Get directions", "href": "#visit" }
   },
-  "footer": { "line": "Your business · District 1, Saigon" }
+  "hero": {
+    "eyebrow": "19 Duy Tân, Hà Nội",
+    "headline": "Genuine Apple accessories, sealed at the source.",
+    "sub": "AirPods, cables, cases and watch bands — every box opened in front of you, every serial checked against Apple's own records.",
+    "cta": { "label": "See what's in stock", "href": "#products" },
+    "ctaSecondary": { "label": "Find the store", "href": "#visit" }
+  },
+  "badges": [
+    { "label": "100% chính hãng" },
+    { "label": "Serial checked in-store" },
+    { "label": "Apple warranty honoured" }
+  ],
+  "products": {
+    "eyebrow": "In stock this week",
+    "heading": "Four shelves, one standard.",
+    "sub": "Everything here ships in Apple's own packaging — nothing repacked, nothing relabelled.",
+    "items": [
+      {
+        "name": "AirPods & cases",
+        "desc": "AirPods Pro, AirPods 4 and the silicone cases that fit them, in every colour Apple ships.",
+        "price": "From 1.590.000₫",
+        "image": "/images/hero-earbuds.jpg"
+      },
+      {
+        "name": "Phone cases",
+        "desc": "Silicone, clear and leather cases for the current iPhone lineup.",
+        "price": "From 390.000₫",
+        "image": "/images/product-cases.jpg"
+      },
+      {
+        "name": "Cables & chargers",
+        "desc": "USB-C cables, MagSafe chargers and power adapters, Apple-certified.",
+        "price": "From 290.000₫",
+        "image": "/images/product-cables.jpg"
+      },
+      {
+        "name": "Watch bands",
+        "desc": "Sport Loop, Sport Band and leather straps, sized for every wrist.",
+        "price": "From 690.000₫",
+        "image": "/images/product-bands.jpg"
+      }
+    ]
+  },
+  "genuine": {
+    "eyebrow": "Why genuine matters",
+    "heading": "We only sell what we'd trust on our own phones.",
+    "body": "Grey-market accessories fail quietly — a cable that overheats, a case that doesn't quite fit, earbuds that stop pairing after a month. Every item at Tony Apple comes sealed from an authorised distributor, and we check the serial with you before you pay.",
+    "points": [
+      { "title": "Sealed box", "desc": "Opened together, at the counter — never before you arrive." },
+      { "title": "Serial checked", "desc": "We look it up against Apple's own records while you watch." },
+      { "title": "Warranty honoured", "desc": "Apple's own warranty applies, backed by our receipt." }
+    ],
+    "image": "/images/hanoi-street.jpg"
+  },
+  "visit": {
+    "eyebrow": "Visit the store",
+    "heading": "19 Duy Tân, Hà Nội",
+    "sub": "Come see the shelf before you buy — every piece is out, unlocked, ready to hold.",
+    "cta": { "label": "Get directions", "href": "https://maps.google.com/?q=19+Duy+T%C3%A2n,+H%C3%A0+N%E1%BB%99i" }
+  },
+  "footer": {
+    "line": "Tony Apple · 19 Duy Tân, Hà Nội"
+  }
 }
